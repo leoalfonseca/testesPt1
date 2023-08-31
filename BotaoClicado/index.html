@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Botão com JavaScript</title>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <button id="myButton">Clique Aqui</button>
+        <p id="displayText">Texto inicial</p>
+    </div>
+
+    <script>
+        // Função que será chamada quando o botão for clicado
+        function handleClick() {
+            var displayText = document.getElementById("displayText");
+            displayText.textContent = "Botão clicado!";
+            displayText.style.backgroundColor = "red";
+            displayText.style.color = "white";
+        }
+
+        // Adiciona o evento de clique ao botão
+        var button = document.getElementById("myButton");
+        button.addEventListener("click", handleClick);
+    </script>
+</body>
+</html>
